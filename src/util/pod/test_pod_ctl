@@ -8,6 +8,8 @@ fail() {
 
 # Determine location of binaries
 
+# Disabling SC2128, more context here -> https://stackoverflow.com/questions/35006457/choosing-between-0-and-bash-source
+#shellcheck disable=SC2128
 UNIT_TEST=$(dirname -- "$BASH_SOURCE")
 BUILD=$(dirname -- "$UNIT_TEST")
 BIN=$BUILD/bin
