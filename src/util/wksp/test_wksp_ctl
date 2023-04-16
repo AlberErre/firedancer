@@ -50,8 +50,8 @@ echo Testing tag
 
 echo Testing new
 
-"$BIN"/fd_wksp_ctl new                                            && fail new $?
-"$BIN"/fd_wksp_ctl new "$WKSP"                                      && fail new $?
+"$BIN"/fd_wksp_ctl new                                                && fail new $?
+"$BIN"/fd_wksp_ctl new "$WKSP"                                        && fail new $?
 "$BIN"/fd_wksp_ctl new "$WKSP"    "$PAGE_CNT"                         && fail new $?
 "$BIN"/fd_wksp_ctl new "$WKSP"    "$PAGE_CNT" $PAGE_SZ                && fail new $?
 "$BIN"/fd_wksp_ctl new "$WKSP"    "$PAGE_CNT" $PAGE_SZ $CPU_IDX       && fail new $?
