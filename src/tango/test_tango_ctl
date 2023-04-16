@@ -119,8 +119,8 @@ echo Testing query-dcache
 
 echo Testing delete-dcache
 
-"$BIN"/fd_tango_ctl delete-dcache          && fail delete-dcache $?
-"$BIN"/fd_tango_ctl delete-dcache bad      && fail delete-dcache $?
+"$BIN"/fd_tango_ctl delete-dcache            && fail delete-dcache $?
+"$BIN"/fd_tango_ctl delete-dcache bad        && fail delete-dcache $?
 "$BIN"/fd_tango_ctl delete-dcache "$DCACHE0" \
                     delete-dcache "$DCACHE1" \
                     delete-dcache "$DCACHE2" \
